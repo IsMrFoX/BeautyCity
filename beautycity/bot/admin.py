@@ -35,3 +35,11 @@ class ShiftAdmin(admin.ModelAdmin):
 @admin.register(ClientOffer)
 class ClientServiceAdmin(admin.ModelAdmin):
     list_display = ['client', 'master_schedule', 'shift']
+
+admin.site.register(Client, ClientAdmin)
+admin.site.register(Master, MasterAdmin)
+admin.site.register(Site, SiteAdmin)
+admin.site.register(Service, ServiceAdmin)
+admin.site.register(MasterSchedule, MasterScheduleAdmin)
+admin.site.register(Shift, ShiftAdmin)
+admin.site.register(ClientOffer, ClientServiceAdmin)
